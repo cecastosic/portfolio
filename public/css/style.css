@@ -98,7 +98,7 @@ figure figcaption {
 }
 
 #colorlib-aside {
-  padding-top: 1em;
+  padding-top: 2em;
   padding-bottom: 0.5em;
   float: left;
   width: 300px;
@@ -109,6 +109,7 @@ figure figcaption {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -119,7 +120,6 @@ figure figcaption {
     -ms-transform: translateX(-300px);
     -o-transform: translateX(-300px);
     transform: translateX(-300px);
-    padding-top: 4em;
   }
 }
 
@@ -258,7 +258,7 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
   #colorlib-aside .colorlib-footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
   }
 }
@@ -303,7 +303,7 @@ figure figcaption {
 @media screen and (max-width: 768px) {
   #colorlib-main {
     width: 100%;
-    padding: 0 1em;
+    padding: 0;
   }
 }
 
@@ -390,18 +390,20 @@ figure figcaption {
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
-  #colorlib-hero .flexslider .slider-text > .slider-text-inner {
-    text-align: center;
-  }
-}
-
 #colorlib-hero .flexslider .slider-text > .slider-text-inner,
 #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
   margin: 0;
   padding: 0;
   color: black;
   font-family: "Playfair Display", Georgia, serif;
+}
+
+@media screen and (max-width: 768px) {
+  #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+    padding-top: 3em;
+    padding-bottom: 1em;
+    text-align: left;
+  }
 }
 
 #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
@@ -414,6 +416,7 @@ figure figcaption {
 @media screen and (max-width: 768px) {
   #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
     font-size: 28px;
+    width: 70%;
   }
 }
 
@@ -423,6 +426,13 @@ figure figcaption {
   margin-bottom: 30px;
   font-weight: 300;
   font-family: "Quicksand", Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+    font-weight: 300;
+    width: 70%;
+  }
 }
 
 #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 a {
@@ -479,8 +489,9 @@ figure figcaption {
 }
 
 @media screen and (max-width: 768px) {
-  #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
-    width: 100%;
+  #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
+    background: rgba(255, 255, 255, 0.5) !important;
+    width: 70%;
   }
 }
 
@@ -549,9 +560,14 @@ body.offcanvas .colorlib-nav-toggle {
   .colorlib-about,
   .colorlib-services,
   .colorlib-contact {
-    padding-top: 5em;
-    padding-bottom: 8em;
+    padding: 5em 1em 8em 1em;
   }
+}
+
+.colorlib-services p {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 2em;
 }
 
 .author-img {
@@ -684,6 +700,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .panel-body p {
   margin-bottom: 0.2em;
+  overflow-wrap: break-word;
 }
 
 .timeline-centered {
