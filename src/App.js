@@ -11,7 +11,7 @@ import "./App.css";
 function App() {
   return (
     <div id="colorlib-page">
-      <div class="container-wrap">
+      <div className="container-wrap">
         <Menu />
         <div id="colorlib-main">
           <Home />
